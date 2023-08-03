@@ -21,6 +21,10 @@ inputs:
     description: "force to tag a specific branch"
     required: false
     default: ""
+  tag: 
+    description: "Custom tag to be added to the current SHA. Will not perform any version bumping, but adds the provided tag."
+    required: false
+    default: ""
   with-v: 
     description: "use version prefix"
     required: false
