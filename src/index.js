@@ -14,7 +14,8 @@ async function checkTag(octokit, tagName) {
         owner,
         repo
     });
-
+    core.info(data);
+    core.info(tagName);
     if (data) {
         const result = data.filter(tag => tag.name === tagName);
 
