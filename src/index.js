@@ -223,9 +223,9 @@ async function action() {
     core.info(`active branch name is ${ branchName }`);
 
     if (customTag){
-        if (checkTag(octokit, customTag)) {
-            throw new Error(`tag already exists ${customTag}`);
-        }
+        // if (checkTag(octokit, customTag)) {
+        //     throw new Error(`tag already exists ${customTag}`);
+        // }
 
         core.setOutput("new-tag", customTag);
     }
